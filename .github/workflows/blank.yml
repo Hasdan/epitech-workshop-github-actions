@@ -4,6 +4,8 @@ name: CI
 
 # Controls when the workflow will run
 on:
+  schedule:
+    - cron: '* * 1 * *'
   gollum:
     types: [created, edited, deleted]
   issue_comment:
